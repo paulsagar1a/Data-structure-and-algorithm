@@ -1,5 +1,8 @@
 package linkedlist;
 
+/*In this example we will see how to create a circular linkedlist,
+how to detect the circle/loop, how to find the starting of the loop and
+how to remove the loop of the linkedlist*/
 public class LoopTest {
 	public Node head;
 	public static class Node {
@@ -10,6 +13,7 @@ public class LoopTest {
 		}
 	}
 	
+	//add node to the linkedlist
 	public void addNode(Node node) {
 		if(head == null) {
 			head = node;
@@ -22,6 +26,7 @@ public class LoopTest {
 		}
 	}
 	
+	//create the loop
 	public void createCircle(int position) {
 		Node temp1 = head;
 		while(temp1.next != null) {
@@ -37,6 +42,7 @@ public class LoopTest {
 		temp1.next = temp2;
 	}
 	
+	//display the data
 	public void print(int num) {
 		Node temp = head;
 		int i = 0;
