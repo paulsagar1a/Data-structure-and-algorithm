@@ -1,7 +1,8 @@
 package linkedlist;
 
-/*Given a singly linked list, determine if its a palindrome. 
- * Return 1 or 0 denoting if its a palindrome or not, respectively.
+/*Determine if a linked list is a palindrome
+Given a singly linked list, determine if its a palindrome. 
+Return 1 or 0 denoting if its a palindrome or not, respectively.
 
 Notes:
 - Expected solution is linear in time and constant in space.
@@ -32,7 +33,7 @@ public class PalindromeTest {
 		}
 	}
 	
-	//add node to the linkedlist
+	//add node to the linked list
 	public void addNode(Node node) {
 		if(head == null) {
 			head = node;
@@ -47,7 +48,7 @@ public class PalindromeTest {
 	
 	//checking palindrome
 	public boolean isPalindrome() {
-		//find the middle of the linkedlist
+		//find the middle of the linked list
 		Node midNode = findMiddle();
 		Node secondHalf = midNode.next;
 		midNode.next = null;
@@ -64,7 +65,7 @@ public class PalindromeTest {
 		return response;
 	}
 	
-	//finding the middle of the linkedlist
+	//finding the middle of the linked list
 	public Node findMiddle() {
 		Node temp1 = head;
 		Node temp2 = head;
@@ -87,7 +88,7 @@ public class PalindromeTest {
 		return previous;
 	}
 	
-	//finding the two nodes are identical or not
+	//finding if the two nodes are identical
 	public boolean isIdentical(Node first, Node second) {
 		while(first != null && second != null) {
 			if(first.data != second.data)
@@ -109,7 +110,7 @@ public class PalindromeTest {
 		return tempHead;
 	}
 	
-	//printing the linkedlist
+	//printing the linked list
 	public void print() {
 		Node temp = head;
 		while(temp != null) {

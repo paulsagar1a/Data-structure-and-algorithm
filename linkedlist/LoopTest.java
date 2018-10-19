@@ -1,8 +1,9 @@
 package linkedlist;
 
-/*In this example we will see how to create a circular linkedlist,
+/* Test if a linked list has loop
+In this example we will see how to create a circular linked list,
 how to detect the circle/loop, how to find the starting of the loop and
-how to remove the loop of the linkedlist*/
+how to remove the loop of the linked list*/
 public class LoopTest {
 	public Node head;
 	public static class Node {
@@ -13,7 +14,7 @@ public class LoopTest {
 		}
 	}
 	
-	//add node to the linkedlist
+	//add node to the linked list
 	public void addNode(Node node) {
 		if(head == null) {
 			head = node;
@@ -53,7 +54,7 @@ public class LoopTest {
 		}
 	}
 	
-	//check the linkedlist is circular or not
+	//check the linked list is circular or not
 	//Floyd’s Cycle-Finding Algorithm
 	public boolean detectLoop() {
 		Node temp1 = head;
@@ -115,7 +116,6 @@ public class LoopTest {
 			temp2 = temp2.next;
 		}
 		temp2.next = null;
-		System.out.println("loop is detached");
 	}
 	
 	public static void main(String[] args) {
