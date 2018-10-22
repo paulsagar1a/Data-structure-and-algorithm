@@ -2,10 +2,10 @@ package array;
 
 /*******************************************************
  * @author SAGAR PAUL (paulsagar1a)
- * @category Data Structure Array
+ * @category Array
  *******************************************************/
-/*Given an arry of integers, find contigious subarray within it which has largesr sum*/
-//this is also called Kadane's algo
+/*Given an array of integers, find contagious sub-array within it which has largest sum*/
+//this is also called Kadane's algorithm
 public class MaximumSubArray {
 
 	public static void main(String[] args) {
