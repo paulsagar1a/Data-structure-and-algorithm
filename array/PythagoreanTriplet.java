@@ -16,6 +16,8 @@ public class PythagoreanTriplet {
 		// TODO Auto-generated method stub
 		int[] arr = {4, 3, 6, 1, 5};
 		System.out.println(presentTriplet(arr));
+		
+		//Time complexity = O(n^2)
 	}
 	
 	public static boolean presentTriplet(int[] arr) {
