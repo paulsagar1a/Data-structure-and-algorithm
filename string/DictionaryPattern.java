@@ -8,7 +8,7 @@ import java.util.Map;
 
 /*******************************************************
  * @author SAGAR PAUL (paulsagar1a)
- * @category Array
+ * @category String
  *******************************************************/
 
 /*Find all strings that match specific pattern in a dictionary
