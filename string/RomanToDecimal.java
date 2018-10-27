@@ -1,7 +1,13 @@
 package string;
 
+/*******************************************************
+ * @author SAGAR PAUL (paulsagar1a)
+ * @category String
+ *******************************************************/
+/*Convert a roman number to a decimal number*/
 public class RomanToDecimal {
 
+	//get all the values of each roman number
 	private int getDecimalValue(char ch) {
 		if(ch == 'I') 
 			return 1;
@@ -20,6 +26,7 @@ public class RomanToDecimal {
 		return -1;
 	}
 	
+	//function that converts roman to decimal
 	private int getDecimal(String roman) {
 		int decimal = 0;
 		int length = roman.length();
@@ -27,10 +34,12 @@ public class RomanToDecimal {
 			int num1 = getDecimalValue(roman.charAt(i));
 			if(i+1 < length) {
 				int num2 = getDecimalValue(roman.charAt(i+1));
+				//if next roman number is greater than previous one
+				//subtract the previous from the next
 				if(num1 < num2) {
 					decimal += num2 - num1;
 					i++;
-				} else {
+				} else { //only add the current number
 					decimal += num1;
 				}
 			} else {
