@@ -36,9 +36,29 @@ public class RecursiveReverse {
 	}
 	
 	public void recursiveReverse() {
+		//recursion
 		head = reverseNode(head);
+		System.out.println("-----After recursive reverse-----");
+		print();
+		//tail recursion
+		head = tailRecursion(head, null);
+		System.out.println("-----After tail recursive reverse-----");
+		print();
 	}
 	
+	private Node tailRecursion(Node current, Node previous) {
+		// TODO Auto-generated method stub
+		if(current.next == null) {
+			head = current;
+			current.next = previous;
+			return head;
+		}
+		Node temp = current.next;
+		current.next = previous;
+		tailRecursion(temp, current);
+		return head;
+	}
+
 	private Node reverseNode(Node node) {
 		// TODO Auto-generated method stub
 		Node newHead;
@@ -65,8 +85,6 @@ public class RecursiveReverse {
 		System.out.println("-----Before recursive reverse-----");
 		obj.print();
 		obj.recursiveReverse();
-		System.out.println("-----After recursive reverse-----");
-		obj.print();
 	}
 
 }
