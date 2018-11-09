@@ -1,6 +1,6 @@
 /*******************************************************
  * @author SAGAR PAUL (paulsagar1a)
- * @category String
+ * @category miscellaneous
  *******************************************************/
 //print pascal's triangle
 package miscellaneous;
@@ -26,6 +26,7 @@ public class PascalTriangle {
 		}
 	}
 	
+	//matrix
 	private static void printPascalMatrix(int n) {
 		// An auxiliary array to store  
 		// generated pscal triangle values 
