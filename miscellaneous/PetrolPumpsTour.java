@@ -15,7 +15,6 @@ Calculate the first point from where a truck will be able to complete
 the circle (The truck will stop at each petrol pump and it has infinite 
 		capacity). Expected time complexity is O(n). Assume for 1 litre 
 petrol, the truck can go 1 unit of distance.*/
-
 package miscellaneous;
 
 import java.util.ArrayList;
