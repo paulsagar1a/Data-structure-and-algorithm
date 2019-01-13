@@ -1,3 +1,9 @@
+/*******************************************************
+ * @author SAGAR PAUL (paulsagar1a)
+ * @category dynamic_programming
+ *******************************************************/
+
+//find the longest increasing subsequence length using dynamic programming
 package dynamic_programming;
 
 public class LongestSubsequenceLength {
